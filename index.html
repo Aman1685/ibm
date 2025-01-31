@@ -1,17 +1,22 @@
-<html>
-    <head>
-        <script>
-            function myClickFunction() { // function to display alert message
-                 alert("This is a JavaScript message!"); }
-        </script>
-    </head>    
-
-    <body background-color="green">
-        <form action="text"></form>
-        Name<input type="text" placeholder="name" color="green">
-        date of birth<input type="date" placeholder="date of birth">
-        email<input type="email" placeholder="email">
-        accept conditions<input type="checkbox" >
-        submit<button onclick="myClickFunction()" type="submit">submit</button> <!--onclick event-->
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="head-text">Task List</h1>
+        <div id="newtask">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button id="push">Add</button>
+        </div>
+        <div class="tasks"></div>
+    </div>
+</body>
 </html>
